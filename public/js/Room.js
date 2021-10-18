@@ -325,45 +325,45 @@ async function shareRoom(useNavigator = false) {
     function share() {
         sound('open');
 
-        Swal.fire({
-            background: swalBackground,
-            position: 'center',
-            title: '<strong>Hello ' + peer_name + '</strong>',
-            html:
-                `
-            <br/>
-            <div id="qrRoomContainer">
-                <canvas id="qrRoom"></canvas>
-            </div>
-            <br/><br/>
-            <p style="background:transparent; color:white;">Share this meeting invite others to join.</p>
-            <p style="background:transparent; color:rgb(8, 189, 89);">` +
-                RoomURL +
-                `</p>`,
-            showDenyButton: true,
-            showCancelButton: true,
-            confirmButtonText: `Copy meeting URL`,
-            denyButtonText: `Email invite`,
-            cancelButtonText: `Close`,
-            showClass: {
-                popup: 'animate__animated animate__fadeInUp',
-            },
-            hideClass: {
-                popup: 'animate__animated animate__fadeOutUp',
-            },
-        }).then((result) => {
-            if (result.isConfirmed) {
-                copyRoomURL();
-            } else if (result.isDenied) {
-                let message = {
-                    email: '',
-                    subject: 'Please join our MiroTalkSfu Video Chat Meeting',
-                    body: 'Click to join: ' + RoomURL,
-                };
-                shareRoomByEmail(message);
-            }
-        });
-        makeRoomQR();
+        // Swal.fire({
+        //     background: swalBackground,
+        //     position: 'center',
+        //     title: '<strong>Hello ' + peer_name + '</strong>',
+        //     html:
+        //         `
+        //     <br/>
+        //     <div id="qrRoomContainer">
+        //         <canvas id="qrRoom"></canvas>
+        //     </div>
+        //     <br/><br/>
+        //     <p style="background:transparent; color:white;">Share this meeting invite others to join.</p>
+        //     <p style="background:transparent; color:rgb(8, 189, 89);">` +
+        //         RoomURL +
+        //         `</p>`,
+        //     showDenyButton: true,
+        //     showCancelButton: true,
+        //     confirmButtonText: `Copy meeting URL`,
+        //     denyButtonText: `Email invite`,
+        //     cancelButtonText: `Close`,
+        //     showClass: {
+        //         popup: 'animate__animated animate__fadeInUp',
+        //     },
+        //     hideClass: {
+        //         popup: 'animate__animated animate__fadeOutUp',
+        //     },
+        // }).then((result) => {
+        //     if (result.isConfirmed) {
+        //         copyRoomURL();
+        //     } else if (result.isDenied) {
+        //         let message = {
+        //             email: '',
+        //             subject: 'Please join our MiroTalkSfu Video Chat Meeting',
+        //             body: 'Click to join: ' + RoomURL,
+        //         };
+        //         shareRoomByEmail(message);
+        //     }
+        // });
+        // makeRoomQR();
     }
 }
 
