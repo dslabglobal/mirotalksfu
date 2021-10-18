@@ -12,7 +12,7 @@ RUN npm install
 COPY app app
 COPY public public
 
-EXPOSE 3010/tcp
+EXPOSE 3000/tcp
 EXPOSE 40000-40100/tcp
 EXPOSE 40000-40100/udp
 

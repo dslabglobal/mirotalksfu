@@ -2,7 +2,7 @@ import requests
 import json
 
 API_KEY = "dslabalwayswinning"
-MIROTALK_URL = "http://localhost:3010/api/v1/meeting"
+MIROTALK_URL = "http://localhost:3000/api/v1/meeting"
 
 headers = {
     "authorization": API_KEY,

@@ -10,6 +10,6 @@ services:
         hostname: mirotalksfu
         restart: unless-stopped
         ports:
-            - '3010:3010/tcp'
+            - '3000:3000/tcp'
             - '40000-40100:40000-40100/tcp'
             - '40000-40100:40000-40100/udp'

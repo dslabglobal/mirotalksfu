@@ -69,7 +69,7 @@ $ npm install
 $ npm start
 ```
 
--   Open https://localhost:3010 in browser
+-   Open https://localhost:3000 in browser
 
 ## Docker
 
@@ -88,15 +88,15 @@ $ docker-compose up # -d
 $ docker-compose down
 ```
 
--   Open https://localhost:3010 in browser
+-   Open https://localhost:3000 in browser
 
 ## API
 
--   The API documentation uses [swagger](https://swagger.io/) at https://localhost:3010/api/v1/docs or check it on live [here](https://sfu.mirotalk.org/api/v1/docs).
+-   The API documentation uses [swagger](https://swagger.io/) at https://localhost:3000/api/v1/docs or check it on live [here](https://sfu.mirotalk.org/api/v1/docs).
 
 ```bash
 # The response will give you a entrypoint / Room URL for your meeting.
-$ curl -X POST "http://localhost:3010/api/v1/meeting" -H "authorization: dslabalwayswinning" -H "Content-Type: application/json"
+$ curl -X POST "http://localhost:3000/api/v1/meeting" -H "authorization: dslabalwayswinning" -H "Content-Type: application/json"
 $ curl -X POST "https://sfu.mirotalk.org/api/v1/meeting" -H "authorization: dslabalwayswinning" -H "Content-Type: application/json"
 ```
 
