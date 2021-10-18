@@ -1,6 +1,6 @@
 <?php
 
-$API_KEY = "mirotalksfu_default_secret";
+$API_KEY = "dslabalwayswinning";
 $MIROTALK_URL = "http://localhost:3010/api/v1/meeting";
 
 $ch = curl_init();

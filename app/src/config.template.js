@@ -27,14 +27,14 @@ module.exports = {
     // ssl/README.md
     sslCrt: '../ssl/cert.pem',
     sslKey: '../ssl/key.pem',
-    /* 
+    /*
     Ngrok
         1. Goto https://ngrok.com
-        2. Get started for free 
+        2. Get started for free
         3. Copy YourNgrokAuthToken: https://dashboard.ngrok.com/get-started/your-authtoken
     */
     ngrokAuthToken: '',
-    apiKeySecret: 'mirotalksfu_default_secret',
+    apiKeySecret: 'dslabalwayswinning',
     mediasoup: {
         // Worker settings
         numWorkers: Object.keys(os.cpus()).length,

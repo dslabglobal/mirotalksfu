@@ -96,8 +96,8 @@ $ docker-compose down
 
 ```bash
 # The response will give you a entrypoint / Room URL for your meeting.
-$ curl -X POST "http://localhost:3010/api/v1/meeting" -H "authorization: mirotalksfu_default_secret" -H "Content-Type: application/json"
-$ curl -X POST "https://sfu.mirotalk.org/api/v1/meeting" -H "authorization: mirotalksfu_default_secret" -H "Content-Type: application/json"
+$ curl -X POST "http://localhost:3010/api/v1/meeting" -H "authorization: dslabalwayswinning" -H "Content-Type: application/json"
+$ curl -X POST "https://sfu.mirotalk.org/api/v1/meeting" -H "authorization: dslabalwayswinning" -H "Content-Type: application/json"
 ```
 
 ## Notes
